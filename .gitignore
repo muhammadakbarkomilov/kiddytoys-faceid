@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+venv/
+.venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Next.js Build
+.next/
+out/
+build/
+
+# Local databases
+*.db
+*.sqlite3
+
+# Temporary / OS files
+.DS_Store
+Thumbs.db
+
+# Agent files
+.agents/
+skills-lock.json
