@@ -73,18 +73,18 @@ export default function DashboardOverviewPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
           {/* Card 1: Jami Xodimlar */}
-          <div className="cf-card p-5 group hover:border-zinc-700/80 transition-colors duration-150">
+          <div className="cf-card p-6">
             <span className="text-[10px] font-mono font-bold text-zinc-500 uppercase tracking-widest block">JAMI XODIMLAR</span>
             <h3 className="text-3xl font-extrabold font-sans mt-1.5 text-zinc-100">
               {total_employees}
             </h3>
-            <div className="w-full bg-zinc-900 h-1.5 rounded-full overflow-hidden mt-4">
-              <div className="bg-gradient-to-r from-blue-600 to-blue-500 h-full transition-all duration-500" style={{ width: `${Math.min((total_employees / 50) * 100, 100)}%` }} />
+            <div className="w-full bg-white/[0.04] h-1.5 rounded-full overflow-hidden mt-4">
+              <div className="h-full transition-all duration-500" style={{ width: `${Math.min((total_employees / 50) * 100, 100)}%`, backgroundColor: 'var(--brand-blue)' }} />
             </div>
           </div>
 
           {/* Card 2: Bugun Kelganlar */}
-          <div className="cf-card p-5 group hover:border-zinc-700/80 transition-colors duration-150">
+          <div className="cf-card p-6">
             <span className="text-[10px] font-mono font-bold text-zinc-500 uppercase tracking-widest block">BUGUN KELGANLAR</span>
             <div className="flex items-baseline gap-2">
               <h3 className="text-3xl font-extrabold font-sans mt-1.5 text-zinc-100">
@@ -94,8 +94,8 @@ export default function DashboardOverviewPage() {
                 ({presenceRate.toFixed(0)}%)
               </span>
             </div>
-            <div className="w-full bg-zinc-900 h-1.5 rounded-full overflow-hidden mt-4">
-              <div className="bg-gradient-to-r from-emerald-600 to-emerald-500 h-full transition-all duration-500" style={{ width: `${presenceRate}%` }} />
+            <div className="w-full bg-white/[0.04] h-1.5 rounded-full overflow-hidden mt-4">
+              <div className="h-full transition-all duration-500" style={{ width: `${presenceRate}%`, backgroundColor: 'var(--brand-blue)' }} />
             </div>
           </div>
         </div>
