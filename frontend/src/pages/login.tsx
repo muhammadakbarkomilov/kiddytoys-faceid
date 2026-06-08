@@ -51,7 +51,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#09090b] px-4 select-none antialiased">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#09090b] px-4 select-none antialiased">
       {/* Login Card */}
       <div className="w-full max-w-[340px] bg-zinc-950/30 border border-zinc-800/80 backdrop-blur-md rounded-xl p-6 shadow-2xl animate-fadeIn space-y-6">
         
@@ -144,6 +144,18 @@ export default function LoginPage() {
             {loading ? 'KIRISH AMALGA OSHIRILMOQDA...' : 'Tizimga kirish'}
           </button>
         </form>
+      </div>
+
+      {/* Developer credit */}
+      <div className="mt-5 text-center animate-fadeIn" style={{ animationDelay: '0.1s' }}>
+        <a
+          href="https://komilov.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[11px] font-semibold text-zinc-600 hover:text-zinc-400 transition-colors tracking-widest font-sans uppercase"
+        >
+          developed by komilov.dev
+        </a>
       </div>
 
       {/* Forgot Password Security Modal */}
